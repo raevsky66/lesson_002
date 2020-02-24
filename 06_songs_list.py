@@ -42,9 +42,11 @@ violator_songs_dict = {
 
 # распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
 #   А другие три песни звучат ХХХ минут
+song_list_time = 0
+song_list = 'Sweetest Perfection', 'Policy of Truth', 'Blue Dress'
 
-for song in violator_songs_list:
-    if song. in song_list:
-        song_list_time += song[1]
+for song in violator_songs_dict:
+      if song in song_list:
+         song_list_time += violator_songs_dict[song]
 
-print('Три песни звучат',round(song_list_time,2))
+print('А другие три песни звучат',round(song_list_time,2))
