@@ -14,7 +14,14 @@ sites = {
 
 distances = {}
 
-# TODO здесь заполнение словаря
+ml = ((sites['Moscow'][0]-sites['London'][0])**2 +(sites['Moscow'][1]-sites['London'][1])**2)**.5
+mp = ((sites['Moscow'][0]-sites['Paris'][0])**2 +(sites['Moscow'][1]-sites['Paris'][1])**2)**.5
+lp = ((sites['Paris'][0]-sites['London'][0])**2 +(sites['Paris'][1]-sites['London'][1])**2)**.5
+
+distances["MP"] = mp
+distances["ml"] = ml
+distances["lp"] = lp
+
 
 print(distances)
 
